@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.0.4/pako.min.js"></script>
+    <title>Chat IMRA</title>
+</head>
+<body>
+    <!--<section id="emojisContainer"></section>-->
+
+    <section id="usuerOnline">
+        <p class="tituloOnline">Usuario en Linea</p>
+    </section>
+
+    <div class="container__padre">
+        <div class="container__circulos">
+            <div class="circulo circulo1"></div>
+            <div class="circulo circulo2"></div>
+            <div class="circulo circulo3"></div>
+        </div>
+
+        <h1>Chat IMRA</h1>
+        <p class="creador">aerley keller lopez ramos</p>
+
+        <div class="container__button">
+            <label class="toggle-switch">
+                <input type="checkbox" id="dark-mode-toggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+        
+        <section id="mensajes"></section>
+
+        <form action="" method="get" id="formulario" class="miFormulario">
+            <input type="text" name="mensaje" id="mensaje" placeholder="Enviar Mensaje" required class="inputSendMessage">
+            
+            <label for="archivo">
+                <svg class="iconFile" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M18.375 12.739l-7.693 7.693a4.5 4.5 0 01-6.364-6.364l10.94-10.94A3 3 0 1119.5 7.372L8.552 18.32m.009-.01l-.01.01m5.699-9.941l-7.81 7.81a1.5 1.5 0 002.112 2.13" />
+                </svg>                                             
+            </label>
+
+            <input type="file" name="archivo" id="archivo" accept=".jpg, .jpeg, .png, .gif, .pdf, .mp4, .avi, .mkv, .mp3, .wav, .ogg">
+            <input type="submit" value="Enviar" id="enviar">            
+        </form>
+    </div>
+
+    <script type="module" src="chat.js"></script>
+</body>
+</html>

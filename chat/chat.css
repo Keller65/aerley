@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    transition-duration: 200ms;
+}
+
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #fff;
+    transition-duration: 700ms;
+}
+
+h1{
+    text-align: center;
+    margin-top: -16px;
+}
+
+.creador{
+    margin: -10px 0 0 2px;
+    font-size: 13px;
+}
+
+.container__padre{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 1000px;
+    box-sizing: border-box;
+    margin: auto;
+    border-radius: 20px;
+    height: 600px;
+    position: relative;
+    transition-duration: 200ms;
+}
+
+.container__padre_DarkMode{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    transition-duration: 700ms;
+}
+
+#mensajes{
+    /*border: solid 1px rgb(189, 189, 189);*/
+    overflow: hidden;
+    max-height: 450px;
+    width: 100%;
+    height: 450px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    padding: 20px 5px;
+    border-radius: 17px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dark_mode_formulario{
+    background-color: black;
+}
+
+#mensajes::-webkit-scrollbar {
+    width: 8px;
+}
+
+#mensajes::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+#mensajes::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+
+#formulario{
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#mensaje{
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 0;
+    border-bottom: solid 1px black;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    box-sizing: border-box;
+    margin: 0 10px;
+    width: 300px;
+    background-color: transparent;
+}
+
+#enviar{
+    background-color: #5900ff;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: -100px;
+}
+
+.mensajeEnviado{
+    max-width: 480px;
+    position: relative;
+    background-color: #e9e9e9; /*e9e9e9*/
+    border-radius: 15px;
+    margin: 5px 0;
+    padding: 5px 25px 5px 5px;
+    box-sizing: border-box;
+    text-align: justify;
+    align-self: flex-end;
+}
+
+.mensajeRecibido{
+    max-width: 480px;
+    position: relative;
+    background-color: #e9e9e9;
+    border-radius: 15px;
+    margin: 5px 0;
+    padding: 5px 25px 5px 5px;
+    box-sizing: border-box;
+    text-align: justify;
+    align-self: flex-start;
+}
+
+.mensajeEnviadoDarkMode{
+    max-width: 480px;
+    position: relative;
+    background-color: #1d1d1d;
+    color: white; /*e9e9e9*/
+    border-radius: 15px;
+    margin: 5px 0;
+    padding: 5px 25px 5px 5px;
+    box-sizing: border-box;
+    text-align: justify;
+    align-self: flex-end;
+}
+
+.mensajeRecibidoDarkMode{
+    max-width: 480px;
+    position: relative;
+    background-color: #1d1d1d;
+    color: white; /*e9e9e9*/
+    border-radius: 15px;
+    margin: 5px 0;
+    padding: 5px 25px 5px 5px;
+    box-sizing: border-box;
+    text-align: justify;
+    align-self: flex-start;
+}
+
+img{
+    height: 40px;
+    margin-left: 5px;
+    border-radius: 50%;
+    top: 7px;
+    position: absolute;
+}
+
+.archivoAdjunto{
+    height: 150px;
+    border-radius: 0;
+    position: relative;
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
+strong{
+    font-size: 13px;
+    margin-left: 60px;
+    top: 5px;
+}
+
+.mensajeResult{
+    margin-left: 60px;
+    margin-top: -5px;
+}
+
+.fechaMensaje{
+    font-size: 12px;
+    margin-left: 160px;
+    margin-top: -20px;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    color: blue;
+    background: none;
+    padding: 0;
+    border: none;
+    display: none;
+}
+
+.iconFile{
+    height: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    transform: rotateZ(-10deg);
+}
+
+.container__circulos{
+    height: auto;
+    width: 100px;
+    left: 20px;
+    position: absolute;
+    display: flex;
+}
+
+.circulo{
+    margin-left: 5px;
+}
+
+.circulo1{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #FF3B30;
+}
+
+.circulo2{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #FF9500;
+}
+
+.circulo3{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #4CD964;
+}
+
+.container__button{
+    position: absolute;
+    right: 20px;
+}
+
+/* Estilos para el botón de alternancia */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Estilo del fondo del botón */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ebebeb; /* Color de fondo cuando está desactivado */
+    transition: .4s;
+    border-radius: 34px;
+    transition: transform 0.4s cubic-bezier(0.44, -0.76, 1, 1);
+}
+
+/* Estilo del botón deslizante */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+    transition: transform 0.4s cubic-bezier(0.44, -0.76, 1, 1);
+}
+
+/* Estilo del botón cuando está activado */
+input:checked + .slider {
+    background-color: #7bff2f;
+    transition: transform 0.4s cubic-bezier(0.44, -0.76, 1, 1);
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+    transition: transform 0.4s cubic-bezier(0.44, -0.76, 1, 1);
+}
+
+#emojisContainer{
+    height: 200px;
+    width: 300px;
+    overflow: hidden;
+    overflow-y: scroll;
+    display: flex;
+}
+
+#giphyResults{
+    height: 500px;
+    width: 500px;
+}
+
+/*Usuarios Conectados en la aplicacion*/
+
+.tituloOnline{
+    text-align: center;
+}
+
+.usuerOnlineDarkMode{
+    background-color: black;
+}
+
+.modo-oscuro{
+    background-color: #7bff2f;
+}
+
+#usuerOnline{
+    height: 600px;
+    overflow: hidden;
+    width: 270px;
+    background-color: rgb(255, 255, 255);
+    margin-left: -10px;
+    border-radius: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.ContainerUserStatus{
+    height: 50px;
+    width: 100%;
+    padding: 0 5px;
+    box-sizing: border-box;
+    background-color: #ececec;
+    border-radius: 12px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.FotoStatus{
+    background-color: #FF9500;
+    margin-top: -2px;
+}
+
+.nombreStatus{
+    position: absolute;
+    left: 60px;
+    top: 7px;
+    font-size: 1vw;
+}
+
+.correoStatus{
+    position: absolute;
+    left: 60px;
+    top: 25px;
+    font-size: 1vw;
+}

@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+body{
+    background-color: #f1f1f1;
+}
+
+#navbar{
+    height: 50px;
+    padding: 20px 20px 20px 80px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+#navbar li,#navbar a {
+    list-style: none;
+    text-decoration: none;
+    margin-left: 20px;
+    margin: 0 20px;
+    color: #000;
+}
+
+.logoIMRA{
+    height: 40px;
+}
+
+.computer{
+    position: absolute;
+}
+
+.Contaduria_svg{
+    margin: 0 0 0 -30px;
+    position: absolute;
+}
+
+.storeSvg{
+    margin: -2px 0 0 -35px;
+    position: absolute;
+    height: 28px;
+}
+
+.info__cursos{
+    font-size: 28px;
+    text-align: center;
+    font-weight: 500;
+}
+
+#container_father{
+    height: auto;
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.container_photo{
+    height: 350px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: #ffffff;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../resource/btpINformatica.jpg);
+    background-size: cover;
+}
+
+#ilustracion_grupo{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 140%;
+}
+
+.container_Titutlo{
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    padding: 50px 35px 20px 35px;
+    box-sizing: border-box;
+}
+
+.title{
+    font-size: 46px;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.description{
+    text-align: justify;
+    width: 90%;
+}
+
+#btn_send{
+    padding: 8px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 30px;
+}
+
+#sectionPrimary{
+    height: auto;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.card{
+    height: 305px;
+    width: 250px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+    border: #d3d3d3 solid 1px;
+    margin: 5px;
+}
+
+.img__card{
+    height: 240px;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.img_course{
+    width: 100%;
+    z-index: 1;
+}
+
+.curso__descripcion{
+    bottom: 20px;
+    right: 25px;
+    font-size: 17px;
+    position: absolute;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.container__buttons{
+    height: 63px;
+    z-index: 1;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    background-image: url(../resource/unnamed.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container__buttons3{
+    height: 63px;
+    z-index: 1;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    background-image: url(../resource/cpp.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img_course3{
+    width: 100%;
+    z-index: 1;
+    background-image: url(../resource/cursoC++.jpg);
+    background-size: cover;
+}
+
+#btn_card{
+    padding: 8px 20px;
+    background-color: #000;
+    color: white;
+    border: none;
+    bottom: 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container__cards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.img__card2{
+    height: 240px;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.img_course2{
+    width: 100%;
+    z-index: 1;
+}
+
+.curso__descripcion2{
+    bottom: 20px;
+    right: 25px;
+    font-size: 17px;
+    position: absolute;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.container__buttons2{
+    height: 63px;
+    z-index: 1;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    background-image: url(../resource/vsnet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#btn_card{
+    padding: 8px 20px;
+    background-color: #000;
+    color: white;
+    border: none;
+    bottom: 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container__cards{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.container__buttons4{
+    height: 63px;
+    z-index: 1;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    background-image: url(../resource/ullustracion.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width:916px) {
+    body{
+        background-color: #ffffff;
+    }
+
+    .title{
+        font-size: 200%;
+    }
+
+    #ilustracion_grupo{
+        height: 110%;
+    }
+
+    .container_Titutlo{
+        padding: 20px 35px 20px 35px;
+    }
+
+    .description{
+        font-size: 100%;
+    }
+}
+
+.container__profile__photo{
+    height: 100%;
+    width: auto;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.container__user{
+    height: 40px;
+    width: auto;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    position: absolute;
+    right: 90px;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    cursor: pointer;
+}
+
+.container__user__information{
+    height: 100%;
+    width: 100%;
+    width: auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#user__name{
+    font-size: 95%;
+    margin-top: -2px;
+    color: #636363;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#user__email{
+    font-size: 70%;
+    margin-top: -5px;
+    color: #636363;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.container__salirSesion{
+    position: relative;
+    right: 40px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    padding: 20px;
+    height: 40px;
+    width: 40px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.btn__salir{
+    height: 20px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>IMRA</title>
+</head>
+<body>
+    
+    <div class="container_father">
+        <div class="container__img"></div>
+
+        <div class="container__fmr">
+            
+            <form action="" method="get" id="miFormulario">
+                <p class="titulo">Bienvenido al IMRA</p>
+                <p class="acount__message">¿no tienes cuenta? <a href="#" class="solicitud__link">solicitala</a></p>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre" name="nombre" required> <br> <br>
+                <input type="email" id="correo" placeholder="Correo" name="correo" required> <br> <br>
+                <input type="text" id="pass" placeholder="Contraseña" name="pass" required> <br> <br>
+                
+                <input type="submit" value="iniciar sesion" id="registrar">
+
+                <button type="button" id="googlebtn">
+                    <img src="resource/googleIMG.png" alt="google imagen" class="google__img"> Iniciar con Google
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="js/login.js"></script>
+</body>
+</html>

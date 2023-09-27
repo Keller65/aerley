@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="inicio.css">
+    <title>INICIO BTP</title>
+</head>
+<body>
+    <nav id="navbar">
+        <img src="img/imra.jpg" alt="Logo IMRA" class="logoIMRA">
+        <li>
+            <a href="../informatica.html">
+                <img src="img/computer.svg" alt="" class="computer"> &nbsp; &nbsp; &nbsp; &nbsp;
+            Informatica
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <img src="img/local.svg" alt="" class="Contaduria_svg">
+                Contaduria
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <img src="img/store.svg" alt="" class="storeSvg">
+                Administracion
+            </a>
+        </li>       
+
+        <div id="contenedor__indormacionUser">
+            <a href="../chat/chat.html" class="ChatIcon">
+                <svg class="ChatIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                </svg>              
+            </a> 
+
+            <div class="container__user">
+                <img src="" class="container__profile__photo"></img>
+                
+                <div class="container__user__information">
+                    <p id="user__name"></p>
+                    <p id="user__email"></p>
+                </div>
+            </div>
+    
+            <div class="container__salirSesion" id="btn__salir">
+                <img src="../resource/salida.png" alt="salir" class="btn__salir">
+            </div>
+
+        </div>
+
+    </nav>
+
+    <section class="contenedor__Padre">
+        <div class="container__bienvenida">
+            <p id="titulo"></p>
+        </div>
+
+        <div class="container_photo">
+            <div class="container_Titutlo">
+                <h2 class="title">BTP INFORMATICA</h2>
+                <p class="description">
+                    "Los logros de hoy se construyen en el Instituto Gubernamental Dr. Modesto Rodas Alvarado, tu casa,
+                    Jovenes de Chamelecon Futuros Profesionales"
+                </p>
+                <a href="../informatica.html" id="btn_send">Ingresar</a>
+            </div>
+
+            <img src="../resource/Jobriver_-_3D_illustration-removebg-preview.png" alt="group" id="ilustracion_grupo">
+        </div>
+
+        <div class="container_photo2">
+            <div class="container_Titutlo">
+                <h2 class="title2">BTP CONTADURIA Y FINANZAS</h2>
+                <p class="description">
+                    "La Carrera que Te Prepara para ser el mejor Contador posible y Lograr tus Metas
+                    Administrando la Contabilidad de una Empresa"
+                </p>
+                <a href="../informatica.html" id="btn_send">Ingresar</a>
+            </div>
+
+            <img src="../resource/contador.png" alt="group" id="ilustracion_grupo2">
+        </div>
+
+        <div class="container_photo3">
+            <div class="container_Titutlo">
+                <h2 class="title2">Administracion de Empresas</h2>
+                <p class="description">
+                    "Te Preparamos para poder Administrar Tu propia Empresa y poder 
+                    poternciar tu necogio"
+                </p>
+                <a href="../informatica.html" id="btn_send">Ingresar</a>
+            </div>
+
+            <img src="../resource/administrador.jpg" alt="group" id="ilustracion_grupo3">
+        </div>
+
+    </section>
+
+    <script type="module" src="../js/inicio.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+</body>
+</html>

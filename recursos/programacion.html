@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="programacion.css">
+    <title>Programacion</title>
+</head>
+<body>
+    <nav id="navbar">
+        <img src="../resource/imra.jpg" alt="Logo IMRA" class="logoIMRA">
+        <li>
+            <a href="../informatica.html">
+                <img src="../resource/computer.svg" alt="" class="computer"> &nbsp; &nbsp; &nbsp; &nbsp;
+            Informatica
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <img src="../resource/local.svg" alt="" class="Contaduria_svg">
+                Contaduria
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <img src="../resource/store.svg" alt="" class="storeSvg">
+                Administracion
+            </a>
+        </li>
+
+        <div class="container__user">
+            <img src="" class="container__profile__photo" alt="foto"></img>
+            
+            <div class="container__user__information">
+                <p id="user__name"></p>
+                <p id="user__email"></p>
+            </div>
+        </div>
+
+    </nav>
+
+    <p id="titulo">Curso MySQL 2023</p>
+
+    <main id="contenedor__padre">
+        <section class="container_video">
+            <iframe src=https://firebasestorage.googleapis.com/v0/b/imra-database.appspot.com/o/Mysql.mp4?alt=media&token=5977510b-7a53-485d-93f1-221197358ae3" title="Nextjs MySQL Tutorial (CRUD, Subida de imagenes, Tailwind, Deploy)" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+        </section>
+
+        <div class="container__buttons">
+            <button id="downloadButton">Descargar Manual</button>
+            <button id="downloadApp">Descargar App</button>
+        </div>
+
+    </main>
+
+    <script type="module" src="../js/files.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+</body>
+</html>

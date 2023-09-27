@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/informatica.css">
+    <title>BTP-Informatica</title>
+</head>
+<body>
+    <nav id="navbar">
+        <img src="resource/imra.jpg" alt="Logo IMRA" class="logoIMRA">
+        <li>
+            <a href="#">
+                <img src="resource/computer.svg" alt="" class="computer"> &nbsp; &nbsp; &nbsp; &nbsp;
+            Informatica
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <img src="resource/local.svg" alt="" class="Contaduria_svg">
+                Contaduria
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <img src="resource/store.svg" alt="" class="storeSvg">
+                Administracion
+            </a>
+        </li>
+
+        <div class="container__user">
+            <img src="" class="container__profile__photo"></img>
+            
+            <div class="container__user__information">
+                <p id="user__name"></p>
+                <p id="user__email"></p>
+            </div>
+        </div>
+        
+    </nav>
+
+    <section id="container_father">
+
+        <div class="container_photo">
+            <div class="container_Titutlo">
+                <h2 class="title" id="title">BTP INFORMATICA</h2>
+                <p class="description">
+                    "Los logros de hoy se construyen en el Instituto Gubernamental Dr. Modesto Rodas Alvarado, tu casa,
+                    Jovenes de Chamelecon Futuros Profesionales"
+                </p>
+                <button id="btn_send">Matriculate</button>
+            </div>
+
+            <img src="resource/Jobriver_-_3D_illustration-removebg-preview.png" alt="group" id="ilustracion_grupo">
+        </div>
+        
+        <main id="sectionPrimary">
+            <p class="info__cursos">Cursos de Informatica</p>
+
+            <div class="container__cards">
+
+                <div class="card">
+                    <div class="img__card">
+                        <img src="resource/cursoMYSQL.jpg" alt="" class="img_course">
+                    </div>
+    
+                    <div class="container__buttons">
+                        <a href="recursos/programacion.html" id="btn_card" >Ver Curso</a>
+                        <p class="curso__descripcion">MySQL</p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="img__card2">
+                        <img src="resource/cursoVSNET.jpg" alt="" class="img_course2">
+                    </div>
+    
+                    <div class="container__buttons2">
+                        <a href="./cursos/visualnet.html" id="btn_card">Ver Curso</a>
+                        <p class="curso__descripcion">VS.NET</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img__card2">
+                        <img src="" alt="" class="img_course3">
+                    </div>
+    
+                    <div class="container__buttons3">
+                        <a href="./cursos/cpp.html" id="btn_card">Ver Curso</a>
+                        <p class="curso__descripcion">C++</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img__card2">
+                        <img src="" alt="" class="img_course3">
+                    </div>
+    
+                    <div class="container__buttons4">
+                        <a href="./cursos/python.html" id="btn_card">Ver Curso</a>
+                        <p class="curso__descripcion">Python</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img__card2">
+                        <img src="" alt="" class="img_course3">
+                    </div>
+    
+                    <div class="container__buttons4">
+                        <a href="./cursos/excel.html" id="btn_card">Ver Curso</a>
+                        <p class="curso__descripcion">Excel</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img__card2">
+                        <img src="" alt="" class="img_course3">
+                    </div>
+    
+                    <div class="container__buttons4">
+                        <a href="recursos/programacion.html" id="btn_card">Ver Curso</a>
+                        <p class="curso__descripcion">PSeint</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+    </section>
+
+    <script type="module" src="js/db.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+</body>
+</html>

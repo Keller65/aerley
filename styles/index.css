@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eeeeee;
+}
+
+.container_father{
+    height: 100vh;
+    width: 100%;
+    background-color: #eeeeee;
+    display: flex;
+}
+
+.container__img{
+    height: 100%;
+    width: 60%;
+    background-color: black;
+}
+
+.container__fmr{
+    height: 100%;
+    width: 40%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#miFormulario{
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 100px;
+}
+
+#correo, #pass, #nombre{
+    background-color: white;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 290px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#registrar{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 213px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 0 0 0 40px;
+}
+
+.titulo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+
+.acount__message{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+.solicitud__link{
+    font-size: 15px;
+    color: rgb(24, 24, 255);
+    text-decoration: none;
+}
+
+#googlebtn{
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    margin-top: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+#facebookbtn{
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #0819b8;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    margin-top: 10px;
+    height: 40px;
+    width: 213px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+.google__img{
+    height: 100%;
+    margin-right: 10px;
+}
+
+@media (max-width:830px) {
+    .container_father{
+        height: 100vh;
+        width: 100%;
+        background-color: #eeeeee;
+        justify-content: center;
+    }
+
+    .container__img{
+        display: none;
+    }
+
+    .container__fmr{
+        height: auto;
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #miFormulario{
+        width: auto;
+        height: auto;
+        box-sizing: border-box;
+        padding: 0 0 0 8px;
+    }
+}
